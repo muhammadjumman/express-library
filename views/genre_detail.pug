@@ -14,5 +14,11 @@ block content
           a(href=book.url) #{book.title}
         dd #{book.summary}
 
+        
+
       else
         p This genre has no books
+
+  a(href=genre.url+'/delete') Delete
+  <br/>
+  a(href=genre.url+'/update') Update 

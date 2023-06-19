@@ -1,0 +1,11 @@
+extends layout 
+
+block content 
+    h1 #{book.title}
+    br
+    p #{book.summary}
+
+    form(action="", method="post") 
+        div.form-group
+            input#bookid.form-control(type="hidden", name="bookid", required='true', value=book._id)
+        button.btn.btn-primary(type="submit")    Delete
